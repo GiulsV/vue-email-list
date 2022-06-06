@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Vue -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <!-- vue axios cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <link rel="stylesheet" href="css/style.css">
     <title>Vue Email List</title>
 </head>
 <body>
+    <div id="app">
+        
+        <h1>Lista Email</h1>
+
+        <div class="email_list"  v-if="emailList.length == 10">
+            <ul>
+                <li v-for="email in emailList">{{ email }}</li>
+            </ul>
+        </div>
+        
+    </div>
+
     <script src="script/script.js"></script>
 </body>
 </html>
