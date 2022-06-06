@@ -21,8 +21,7 @@ var app = new Vue (
                     this.email = result.data.response;
                     this.emailList.push(this.email);
                 });
-            }
-            
+            }   
         },
     }
 );
