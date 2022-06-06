@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+    height: 100px;
+    background-color: #274c77;
+    color: #e7ecef;
+}
+
+main{
+    height: calc(100vh - 100px);
+    background-color: #adc8da;
+}
+
+#app {
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.email_list {
+    width: 500px;
+    margin: auto;
+    padding: 10px 30px;
+    
+}
+
+ul{
+    margin-top: 50px;
+    border: 1px solid rgba(117, 109, 109, 0.678);
+    background-color: rgba(120, 158, 214, 0.199);
+}
+
+li {
+    padding: 15px 0;
+    text-align: center;
+    outline: none;
+    list-style: none;
+}
+
+li:not(:last-child) {
+    border-bottom: 1px solid rgba(121, 121, 121, 0.568);
+}
